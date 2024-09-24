@@ -1,56 +1,55 @@
-:root{
-
-    --branco-principal:white; 
-    --cinza-secundario: gray;
-    --botao-azul:blue;
---cord-fundo: black;
+body {
+    background-color: bisque;
+    font-family: Bai Jamjuree;
 }
 
-body{
 
+footer {
     background-color: black;
     color: white;
-    font-size: 16px;
-    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
 }
 
-.principal {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOqnR9ui8LVEqgDkuz3W0DohmJ7AjJNlPtcg4mRX4TXpMf_9FP3txipk&s=10");  
-    
-    background-size: contain;
-    align-items: center;
+
+footer p {
     text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 
-.container__botao {
-    background-color: var(--botao-azul);
-    color:white;
-    border-radius: 5px;
-    display: block;
-    border: 2px solid var(--branco-principal);
-    text-decoration: none;
-margin-bottom: 1em;
+#container {
+
+    display: flex;
 }
 
 
-.container{ height: 100vh; 
-    display:grid;
-    border-radius: 5px;
-padding: 1em;
-    grid-template-columns: 50% 50%;}
+.cartao {
 
-    .botao_secundario {
-        background-color: transparent;
-        background-color: transparent;
-border: 2px solid var(--branco-principal);
+    margin: 1rem 1rem;
+    background-image: url(https://images01.brasildefato.com.br/d23771f0220569bd2c873a68a3093410.webp);
+    background-color: blue;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+
+.cartao__conteudo {
+    text-align: center;
+    background-color: rgb(182, 108, 18);
+    }
+
+    .cartao__conteudo h3 {
+        background-color: tomato;
+        text-align: left;
+        padding: 0.5rem;
+        position: absolute;
+        margin: 0.6rem;
+        border-radius: 0.6rem;
+        font-size: 1vw;
         }
-
-
-        .container__imagem {
-            margin: 1em 0 2em 0;
-            }
-
-            .container__caixa{
-                margin: 0 6em;
-                }
+        
